@@ -15,7 +15,8 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 file(GLOB SOURCES ${PROJECT_SOURCE_DIR}/src/*.cpp)
 
 # Add an executable
-add_executable(asterisk-ari-curl src/main.cpp)
+add_executable(asterisk-ari-curl src/main.cpp
+        src/ari_utils.cpp)
 
 
 # Find and link Boost libraries
